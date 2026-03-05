@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss Battery — Поддержка</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .faq-item {
+            margin-bottom: 25px;
+        }
+        
+        .faq-item h3 {
+            color: #667eea;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .faq-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .contact-box {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 20px;
+        }
+        
+        .contact-box h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .contact-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2em;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-info strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+        
+        .contact-info span {
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .badge {
+            background: #28a745;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+        
+        .app-store-button {
+            display: inline-block;
+            background: #000;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 0.9em;
+            border-top: 1px solid #f0f0f0;
+        }
+        
+        .version-badge {
+            background: #e0e0e0;
+            color: #666;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.7em;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>⚡ Boss Battery</h1>
+                <p>Умный помощник для мониторинга батареи вашего iPhone</p>
+            </div>
+            
+            <div class="content">
+                <div class="section">
+                    <h2>❓ Часто задаваемые вопросы</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Почему приложение не показывает реальные циклы и температуру?</h3>
+                        <p>Apple ограничивает доступ к этим данным для сторонних приложений. Мы предлагаем честный подход — вы вводите данные вручную из настроек, а мы строим точный прогноз.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Как ввести данные о батарее?</h3>
+                        <p>На главном экране нажмите кнопку "Ввести данные батареи" и укажите количество циклов и максимальную емкость из меню Настройки > Аккумулятор > Состояние аккумулятора.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Что означает прогноз "до 80%"?</h3>
+                        <p>Это количество месяцев, через которое максимальная емкость вашей батареи снизится до 80% от первоначальной. При 80% Apple рекомендует замену батареи.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Как часто обновляются данные?</h3>
+                        <p>Уровень заряда обновляется в реальном времени. Фоновые обновления происходят каждые 15 минут для экономии заряда.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Куда экспортируются данные?</h3>
+                        <p>CSV-файл сохраняется в папку "Файлы" на вашем устройстве. Вы можете открыть его в Excel, Numbers или любом текстовом редакторе.</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>📱 Версии приложения</h2>
+                    <p><strong>Текущая версия:</strong> 1.0.0 <span class="version-badge">последняя</span></p>
+                    <p><strong>Требования:</strong> iOS 15.0 или новее</p>
+                    <p><strong>Размер:</strong> ~15 MB</p>
+                    <p><strong>Язык:</strong> Русский</p>
+                </div>
+                
+                <div class="section">
+                    <h2>📞 Связаться с поддержкой</h2>
+                    
+                    <div class="contact-box">
+                        <h3>Выберите удобный способ связи:</h3>
+                        
+                        <div class="contact-links">
+                            <a href="mailto:support@alexproduction.ru" class="contact-link">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-info">
+                                    <strong>Email</strong>
+                                    <span>support@alexproduction.ru</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://t.me/bossbattery_support" class="contact-link">
+                                <div class="contact-icon">✈️</div>
+                                <div class="contact-info">
+                                    <strong>Telegram</strong>
+                                    <span>@bossbattery_support</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://github.com/alexproduction/BossBattery/issues" class="contact-link">
+                                <div class="contact-icon">🐛</div>
+                                <div class="contact-info">
+                                    <strong>GitHub Issues</strong>
+                                    <span>Сообщить об ошибке или предложить идею</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <p style="margin-top: 20px; color: #666; font-size: 0.95em;">
+                            ⏱️ Обычно отвечаем в течение 24 часов
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>🔗 Полезные ссылки</h2>
+                    
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <a href="#" class="app-store-button" style="background: #007aff;">📱 Открыть в App Store</a>
+                        <a href="#" class="app-store-button" style="background: #6c757d;">📄 Политика конфиденциальности</a>
+                    </div>
+                    
+                    <p style="margin-top: 20px; color: #666;">
+                        <strong>GitHub:</strong> <a href="https://github.com/alexproduction/boss-battery-support">https://github.com/alexproduction/boss-battery-support</a>
+                    </p>
+                </div>
+                
+                <div class="footer">
+                    <p>© 2026 AlexProduction. Все права защищены.</p>
+                    <p style="margin-top: 10px;">Boss Battery — независимый проект, не связанный с Apple Inc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
